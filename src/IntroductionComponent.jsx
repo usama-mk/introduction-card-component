@@ -16,7 +16,7 @@ export default function IntroductionComponent(props) {
     const [score, setScore]= useState(props.retrievedValues.score);
     return (
         <div>
-            <Card style={{padding:"10px", width:"40vw", height:"70vh"  }}>
+            <Card style={{padding:"10px", width:"40vw",    }}>
                <div className="mainIntro">
                    <div className="header" style={{display:"flex",   justifyContent:"space-between"}}>
                        <h1 style={{marginLeft:"10px", color:"grey"}}>Introduction</h1>
@@ -27,29 +27,29 @@ export default function IntroductionComponent(props) {
                    <div className="contentContainer" style={{display:"flex", justifyContent:"space-between"  ,paddingLeft:"10%", paddingRight:"10%"}}>
                        {/* 1st column */}
                        <div style={{display:"flex", justifyContent:"space-around", flexDirection:"column"}}>
-                           <div style={{display:"flex", alignItems:"center", marginTop:"10px",  padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center", marginTop:"10px",  }}>
                              {verifyEmail?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Verify your email address.</h5>
+                               <h6>Verify your email address.</h6>
                            </div>
                      {/* separator */}
-                           <div style={{display:"flex", alignItems:"center",  padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center",  }}>
                            {phoneNumber?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Add a phone Number.</h5>
+                               <h6>Add a phone Number.</h6>
                            </div>
 
-                           <div style={{display:"flex", alignItems:"center",    padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center", }}>
                            {generateWallet?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Generate a crypto wallet.</h5>
+                               <h6>Generate a crypto wallet.</h6>
                            </div>
                      {/* separator */}
-                           <div style={{display:"flex", alignItems:"center",  padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center",  }}>
                            {firstDeposit?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Make your first deposit.</h5>
+                               <h6>Make your first deposit.</h6>
                            </div>
 
-                           <div style={{display:"flex", alignItems:"center",   padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center",   }}>
                            {firstOffer?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Post your first offer.</h5>
+                               <h6>Post your first offer.</h6>
                            </div>
                     
                            
@@ -57,27 +57,27 @@ export default function IntroductionComponent(props) {
                        {/* 2nd col */}
 
                        <div style={{display:"flex", justifyContent:"space-around", flexDirection:"column"}}>
-                           <div style={{display:"flex", alignItems:"center", marginTop:"10px",  padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center", marginTop:"10px",  }}>
                            {firstTransaction?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Start your first transaction.</h5>
+                               <h6>Start your first transaction.</h6>
                            </div>
                      {/* separator */}
-                           <div style={{display:"flex", alignItems:"center",   padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center",  }}>
                            {firstWithdraw?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Make your first Withdraw.</h5>
+                               <h6>Make your first Withdraw.</h6>
                            </div>
-                           <div style={{display:"flex", alignItems:"center",   padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center",  }}>
                            {exchange300?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Exchange over $300.</h5>
+                               <h6>Exchange over $300.</h6>
                            </div>
                      {/* separator */}
-                           <div style={{display:"flex", alignItems:"center",  padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center",  }}>
                            {exchange1000?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Exchange over $1,000.</h5>
+                               <h6>Exchange over $1,000.</h6>
                            </div>
-                           <div style={{display:"flex", alignItems:"center",  padding:"5px"}}>
+                           <div style={{display:"flex", alignItems:"center",  }}>
                            {exchange5000?  <CheckCircleOutlineRounded style={{marginRight:"10px", color:"lightpink"}}/>: <CancelOutlined  style={{marginRight:"10px", color:"grey"}}/>}
-                               <h5>Exchange over $5,000.</h5>
+                               <h6>Exchange over $5,000.</h6>
                            </div>
         
                            
