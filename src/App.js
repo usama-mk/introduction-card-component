@@ -3,11 +3,25 @@ import './App.css';
 import IntroductionComponent from './IntroductionComponent';
 
 function App() {
+  const retrievedValues={
+    verifyEmail:true,
+    firstTransaction: true, 
+    phoneNumber:false,
+    firstWithdraw:false,
+    generateWallet:true,
+    exchange300:true,
+    firstDeposit:false,
+    exchange1000:true,
+    firstOffer:true,
+    exchange5000:true,
+    score:7
+  }
   return (
     <div className="App">
-      <div style={{display:"flex", justifyContent:"center", alignItems:"center",   margin:"10%"}}>
+      {/* alignItems:"center", */}
+      <div style={{display:"flex", justifyContent:"center", margin:"10px"}}>
 
-       <IntroductionComponent/>
+       <IntroductionComponent retrievedValues={retrievedValues} />
 
       </div>
     </div>
