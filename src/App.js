@@ -1,4 +1,5 @@
  
+import { Grid } from '@material-ui/core';
 import './App.css';
 import IntroductionComponent from './IntroductionComponent';
 
@@ -16,12 +17,21 @@ function App() {
     exchange5000:true,
     score:7
   }
+  const array=[1 ]
   return (
     <div className="App">
       {/* alignItems:"center", */}
       <div style={{display:"flex", justifyContent:"center", margin:"10px"}}>
+        <Grid container>
+          
+       
+           <IntroductionComponent retrievedValues={retrievedValues} />
+           <IntroductionComponent retrievedValues={retrievedValues} />
+          
+       
+         </Grid>
 
-       <IntroductionComponent retrievedValues={retrievedValues} />
+       
 
       </div>
     </div>

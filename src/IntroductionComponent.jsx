@@ -16,7 +16,7 @@ export default function IntroductionComponent(props) {
     const [score, setScore]= useState(props.retrievedValues.score);
     return (
         <div>
-            <Card style={{padding:"10px", width:"40vw",    }}>
+            <Card style={{padding:"10px", width:"40vw",  margin:"40px"  }}>
                <div className="mainIntro">
                    <div className="header" style={{display:"flex",   justifyContent:"space-between"}}>
                        <h1 style={{marginLeft:"10px", color:"grey"}}>Introduction</h1>
